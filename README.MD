@@ -18,11 +18,11 @@ Pada project ini kalian diminta untuk memisahkan logic pada repository kode kali
 
 nama table: Todo (Bisa plural/singular)
 kolom:
-    - id : PRIMARY KEY INTEGER NOT NULL
-    - description: STRING/TEXT. NOT NULL
-    - status: ENUM, NOT NULL (ENUM: ["created", "in_progress", "done"])
-    - createdAt DATE, NOT NULL
-    - updatedAt: DATE, NOT NULL
+- id : PRIMARY KEY INTEGER NOT NULL
+- description: STRING/TEXT. NOT NULL
+- status: ENUM, NOT NULL (ENUM: ["created", "in_progress", "done"])
+- createdAt DATE, NOT NULL
+- updatedAt: DATE, NOT NULL
 
 ### 3. ENDPOINT
 Untuk detail endpoint requirement dapat dilihat pada folder assets/api-doc.md dan assets/todo-api.postman_collection.json. Pastikan server kalian dapat berjalan sesuai dengan berkas tersebut.
