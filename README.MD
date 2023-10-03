@@ -37,10 +37,13 @@ reference: https://sequelize.org/docs/v6/other-topics/migrations/
 
 ### 6. Sequelize hooks n validation
 Tambahkan fungsional pada models dengan hooks n validasi berikut:
+
 -- kolom title
 - tambahkan validasi hanya bisa menerima panjang string maksimal 255 karakter
 - tambahkan validasi input tidak boleh null atau string kosong
+
 -- kolom description
 - tambahkan validasi input tidak boleh null atau string kosong
+
 -- kolom status
 - buatlah hooks untuk memberi nilai default enum jika input status kosong atau tidak sesuai dengan value enum yang telah diset 
