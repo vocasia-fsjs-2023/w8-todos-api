@@ -18,12 +18,12 @@ Pada project ini kalian diminta untuk memisahkan logic pada repository kode kali
 
 nama table: Todo (Bisa plural/singular)
 kolom:
-- id : PRIMARY KEY INTEGER NOT NULL
-- title: STRING/TEXT. NOT NULL
-- description: STRING/TEXT. NOT NULL
-- status: ENUM, NOT NULL (ENUM: ["created", "in_progress", "done"])
-- createdAt DATE, NOT NULL
-- updatedAt: DATE, NOT NULL
+- id : PRIMARY KEY DataTypes.INTEGER NOT NULL
+- title: DataTypes.STRING, NOT NULL
+- description: DataTypes.TEXT, NOT NULL
+- status: DataTypes.ENUM, NOT NULL (ENUM: ["created", "in_progress", "done"])
+- createdAt DataTypes.DATE, NOT NULL
+- updatedAt: DataTypes.DATE, NOT NULL
 
 ### 3. ENDPOINT
 Untuk detail endpoint requirement dapat dilihat pada folder assets/api-doc.md dan assets/todo-api.postman_collection.json. Pastikan server kalian dapat berjalan sesuai dengan berkas tersebut.
@@ -34,3 +34,13 @@ Pada requirement ini kalian diminta untuk melakukan migrasi database todo app me
 ### 5. SEEDER
 Kalian diminta untuk membuat seeder sejumlah 5 data todo menggunakan sequelize-cli.
 reference: https://sequelize.org/docs/v6/other-topics/migrations/
+
+### 6. Sequelize hooks n validation
+Tambahkan fungsional pada models dengan hooks n validasi berikut:
+kolom title
+- tambahkan validasi hanya bisa menerima panjang string maksimal 255 karakter
+- tambahkan validasi input tidak boleh null atau string kosong
+kolom description
+- tambahkan validasi input tidak boleh null atau string kosong
+kolom status
+- buatlah hooks untuk memberi nilai default enum jika input status kosong atau tidak sesuai dengan value enum yang telah diset 
