@@ -44,3 +44,6 @@ Tambahkan fungsional pada models dengan hooks n validasi berikut:
 
 -- kolom description
 - tambahkan validasi input tidak boleh null atau string kosong
+
+-- kolom status
+- tambahkan hooks beforeCreate untuk memberikan default value jika input status kosong.
