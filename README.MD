@@ -4,7 +4,7 @@ Pada Tugas ini, kalian diminta untuk melanjutkan server todo app pada week sebel
 ## Requirement
 ### 1. Struktur folder
 
-Pada project ini kalian diminta untuk memisahkan logic pada repository kode kalian minimal seperti gambar di bawah ini.
+Pada project ini kalian diminta untuk memisahkan logic pada repository kode kalian seperti gambar di bawah ini.
 ![Model-Controller Struktur Folder](./assets/folder-structure.png "Model-Controller Struktur Folder")
 
 - Folder config : berisi config setup database
