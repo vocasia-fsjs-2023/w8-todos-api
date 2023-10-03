@@ -35,8 +35,8 @@ Response:
   "title": "Create POST in TODO App",
   "description": "Membuat API Post Pada Todos app untuk menambahkan todo list",
   "status": "created",
-  "created_at": "2023-09-26",
-  "updated_at": "2023-09-26"
+  "createdAt": "2023-09-26",
+  "updatedAt": "2023-09-26"
 }
 ```
 
@@ -58,8 +58,8 @@ Response:
       "title": "Create POST in TODO App",
       "description": "Membuat API Post Pada Todos app untuk menambahkan todo list",
       "status": "created",
-      "created_at": "2023-09-26",
-      "updated_at": "2023-09-26"
+      "createdAt": "2023-09-26",
+      "updatedAt": "2023-09-26"
     }
   ]
 }
@@ -100,8 +100,8 @@ Response:
   "title": "Create PUT in TODO App",
   "description": "Mengubah todo tentang post menjadi PUT pada TODO App",
   "status": "created",
-  "created_at": "2023-09-26",
-  "updated_at": "2023-09-27"
+  "createdAt": "2023-09-26",
+  "updatedAt": "2023-09-27"
 }
 ```
 
@@ -139,8 +139,8 @@ Response:
   "title": "Create PUT in TODO App",
   "description": "Mengubah todo tentang post menjadi PUT pada TODO App",
   "status": "in_progress",
-  "created_at": "2023-09-26",
-  "updated_at": "2023-09-28"
+  "createdAt": "2023-09-26",
+  "updatedAt": "2023-09-28"
 }
 ```
 
