@@ -12,7 +12,7 @@ Pada project ini kalian diminta untuk memisahkan logic pada repository kode kali
 - Folder migrations : berisi historikal perubahan/penambahan/penghapusan table pada database
 - Folder seeders : berisi logic untuk mengisi table pada database
 - Folder models : berisi file yang merepresentasikan entitas table di database
-- Folder routes : berisi file yang  routing endpoint
+- Folder routes : berisi file routing endpoint
 
 ### 2. ERD Todos
 
