@@ -19,6 +19,7 @@ Pada project ini kalian diminta untuk memisahkan logic pada repository kode kali
 nama table: Todo (Bisa plural/singular)
 kolom:
 - id : PRIMARY KEY INTEGER NOT NULL
+- title: STRING/TEXT. NOT NULL
 - description: STRING/TEXT. NOT NULL
 - status: ENUM, NOT NULL (ENUM: ["created", "in_progress", "done"])
 - createdAt DATE, NOT NULL
