@@ -11,7 +11,7 @@ List of available endpoints:
 ### POST /todos
 
 description:
-create todo to inset it in list
+create todo to insert it to database
 
 Request:
 
@@ -35,8 +35,8 @@ Response:
   "title": "Create POST in TODO App",
   "description": "Membuat API Post Pada Todos app untuk menambahkan todo list",
   "status": "created",
-  "createdAt": "2023-09-26",
-  "updatedAt": "2023-09-26"
+  "createdAt": "2023-10-03T04:39:48.537Z",
+  "updatedAt": "2023-10-03T04:39:48.537Z"
 }
 ```
 
@@ -58,10 +58,40 @@ Response:
       "title": "Create POST in TODO App",
       "description": "Membuat API Post Pada Todos app untuk menambahkan todo list",
       "status": "created",
-      "createdAt": "2023-09-26",
-      "updatedAt": "2023-09-26"
+      "createdAt": "2023-10-03T04:39:48.537Z",
+      "updatedAt": "2023-10-03T04:39:48.537Z"
     }
   ]
+}
+```
+### GET /todos/:id
+
+description:
+get single todo
+
+Request:
+
+- query param:
+
+```json
+{
+  "id": 1
+}
+```
+
+Response:
+
+- status: 200
+- body:
+
+```json
+{
+  "id": 1,
+  "title": "Create PUT in TODO App",
+  "description": "Mengubah todo tentang post menjadi PUT pada TODO App",
+  "status": "created",
+  "createdAt": "2023-10-03T04:39:48.537Z",
+  "updatedAt": "2023-10-03T04:39:48.537Z"
 }
 ```
 
@@ -100,15 +130,15 @@ Response:
   "title": "Create PUT in TODO App",
   "description": "Mengubah todo tentang post menjadi PUT pada TODO App",
   "status": "created",
-  "createdAt": "2023-09-26",
-  "updatedAt": "2023-09-27"
+  "createdAt": "2023-10-03T04:39:48.537Z",
+  "updatedAt": "2023-10-03T04:39:48.537Z"
 }
 ```
 
 ### PATCH /todos/:id
 
 description:
-mengubah status dari satu Todo, dari created, menjadi in_progress, ataupun done
+edit status Todo beetween enum created in_progress and done
 
 Request:
 
@@ -139,15 +169,15 @@ Response:
   "title": "Create PUT in TODO App",
   "description": "Mengubah todo tentang post menjadi PUT pada TODO App",
   "status": "in_progress",
-  "createdAt": "2023-09-26",
-  "updatedAt": "2023-09-28"
+  "createdAt": "2023-10-03T04:39:48.537Z",
+  "updatedAt": "2023-10-03T04:39:48.537Z"
 }
 ```
 
 ### DELETE /todos/:id
 
 description:
-menghapus satu todos dari kumpulan todos list
+delete single todo
 
 Request:
 

@@ -1,7 +1,7 @@
 # My Todo APP
 Pada Tugas ini, kalian diminta untuk melanjutkan server todo app pada week sebelumnya dengan menambahkan penyimpanan database postgresql.
 
-## Direction
+## Requirement
 ### 1. Struktur folder
 
 Pada project ini kalian diminta untuk memisahkan logic pada repository kode kalian minimal seperti gambar di bawah ini.
@@ -10,6 +10,7 @@ Pada project ini kalian diminta untuk memisahkan logic pada repository kode kali
 - Folder config : berisi config setup database
 - Folder controllers: berisi logic untuk memproses request dari client.
 - Folder migrations : berisi historikal perubahan/penambahan/penghapusan table pada database
+- Folder seeders : berisi logic untuk mengisi table pada database
 - Folder models : berisi file yang merepresentasikan entitas table di database
 - Folder routes : berisi file yang  routing endpoint
 
@@ -17,12 +18,18 @@ Pada project ini kalian diminta untuk memisahkan logic pada repository kode kali
 
 nama table: Todo (Bisa plural/singular)
 kolom:
-    - id PRIMARY KEY INTEGER NOT NULL
-    - description STRING/TEXT NOT NULL
-    - status ENUM NOT NULL (ENUM: ["created", "in_progress", "done"])
-    - createdAt DATE NOT NULL
-    - updatedAt: DATE NULL
-    ** catatan untuk penamaan kolom pada todos diperbolehkan untuk camelCase atau snake_case, namun perlu diperhatikan konsistensi untuk input body request dan response.
+    - id : PRIMARY KEY INTEGER NOT NULL
+    - description: STRING/TEXT. NOT NULL
+    - status: ENUM, NOT NULL (ENUM: ["created", "in_progress", "done"])
+    - createdAt DATE, NOT NULL
+    - updatedAt: DATE, NOT NULL
 
 ### 3. ENDPOINT
-Untuk detail endpoint requirement dapat dilihat pada folder assets/api-doc.md dan assets/postman.json
+Untuk detail endpoint requirement dapat dilihat pada folder assets/api-doc.md dan assets/todo-api.postman_collection.json. Pastikan server kalian dapat berjalan sesuai dengan berkas tersebut.
+
+### 4. MIGRATION
+Pada requirement ini kalian diminta untuk melakukan migrasi database todo app menggunakan sequelize cli dan tidak diperbolehkan mengubah secara langsung table/kolom/tipe data melalui gui atau psql. Untuk detailnya akan dijelaskan oleh mentor dan berikut referensinya : https://sequelize.org/docs/v6/other-topics/migrations/
+
+### 5. SEEDER
+Kalian diminta untuk membuat seeder sejumlah 5 data todo menggunakan sequelize-cli.
+reference: https://sequelize.org/docs/v6/other-topics/migrations/
