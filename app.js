@@ -1,3 +1,13 @@
-import dotenv from "dotenv";
+const express = require("express");
 
-dotenv.config();
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use("/todos", require("./routes/todos"));
+
+app.listen(port, () => {
+  console.log("Server listening on port " + port + "...");
+});
