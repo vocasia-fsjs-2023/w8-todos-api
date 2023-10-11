@@ -1,16 +1,23 @@
 {
-  "name": "w8-todos-api",
+  "name": "w8tugas",
   "version": "1.0.0",
-  "description": "Pada Tugas ini, kalian diminta untuk melanjutkan server todo app pada week sebelumnya dengan menambahkan penyimpanan database postgresql.",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "mysql2": "^3.6.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "request": "^2.88.2",
+    "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
   }
 }
