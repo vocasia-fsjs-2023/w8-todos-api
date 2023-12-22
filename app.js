@@ -1,0 +1,18 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const todoRoute = require("./routes/todoRoute");
+const app = express();
+const PORT = process.env.PORT || 5432;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", (req, res) => {
+    res.send("Server is ready!");
+});
+
+app.use("/todos", todoRoute);
+
+app.listen(PORT, () => {
+    console.log(`Server listening on http://localhost:${PORT}...`);
+});
